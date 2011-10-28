@@ -24,7 +24,7 @@ logging.basicConfig()
 def isAIRcable(address):
     return address[:8].upper() in const.AIRCABLE_MAC
 
-import preset as settings
+from openproximity.lib import preset as settings
 
 clogger = logging.StreamHandler()
 clogger.setFormatter(logging.Formatter(settings.DEBUG_CONSOLE_FORMAT))
